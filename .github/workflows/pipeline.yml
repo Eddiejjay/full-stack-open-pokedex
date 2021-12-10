@@ -49,7 +49,7 @@ jobs:
          DEFAULT_BUMP: patch
       - name: Job succes
         uses: 8398a7/action-slack@v3
-        if: ${{ success() }}
+        if: ${{ success() }} 
         with:
           status: custom
           fields: commit,author,took
