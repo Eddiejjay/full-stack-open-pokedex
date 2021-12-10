@@ -1,12 +1,7 @@
 name: Periodical Health Test
-
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches: [master]
-    types: [opened, synchronize]
+  schedule:
+    - cron:  0 */24 * * *
 
 jobs:
   simple_deployment_pipeline:
